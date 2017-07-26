@@ -4,7 +4,7 @@ using namespace std;
 
 int main(void)
 {
-    fstream f;
+    ifstream f;
     string line, fname;
     cout << "Input file name: ";
     cin >> fname;
