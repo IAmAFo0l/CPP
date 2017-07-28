@@ -1,3 +1,5 @@
+// Succesfully compiles and executed in C++17
+
 #include "iostream"
 #include "fstream"
 using namespace std;
