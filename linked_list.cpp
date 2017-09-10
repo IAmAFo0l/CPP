@@ -111,8 +111,7 @@ void del()
         // Iterating over each element
         // If the position is out of range the last element gets popped
         for(int i = 0; i < pos-1 && iter->next != tail; ++i) iter = iter->next;
-        temp = iter->next;
-        iter->next = temp->next;
+        iter->next = iter->next->next;
         // If the last element been deleted, tail is repositioned
         if(iter->next == 0) tail = iter;
     }
