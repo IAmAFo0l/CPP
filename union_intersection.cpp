@@ -17,13 +17,13 @@ int main()
     cout << "Size of first array: ";
     cin >> a;
     int arr[a];
-    cout << "Enter elements of first array: ";
+    cout << "Enter elements of first array separated by space(s): ";
     for(int i = 0; i < a; ++i) cin >> arr[i];
     sort(arr, a);
     cout << "Size of second array: ";
     cin >> b;
     int brr[b];
-    cout << "Enter elements of second array: ";
+    cout << "Enter elements of second array separated by space(s): ";
     for(int i = 0; i < b; ++i) cin >> brr[i];
     sort(brr, b);
     int i = 0, j = 0, t = -1, k = -1, uni[a+b], inter[(a<b)?a:b];
