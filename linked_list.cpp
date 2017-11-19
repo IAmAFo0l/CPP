@@ -60,8 +60,9 @@ void pop()
         iter = head;
         // Iterating over each element
         while(iter->next != tail) iter = iter->next;
+        iter->next = 0;
+        delete tail;
         tail = iter;
-        tail->next = 0;
     }
 }
 
@@ -104,14 +105,20 @@ void del()
     // In case of an empty list
     if(pos == 0 && head == NULL) cout << "Position out of range. Try appending or inserting";
     // Deleting the first element
-    else if(pos == 0) head = head->next;
+    else if(pos == 0){
+        temp = head->next;
+        delete head;
+        head = temp;
+    }
     // Deleting other elements
     else{
         iter = head;
         // Iterating over each element
         // If the position is out of range the last element gets popped
         for(int i = 0; i < pos-1 && iter->next != tail; ++i) iter = iter->next;
-        iter->next = iter->next->next;
+        temp = iter->next;
+        iter->next = temp->next;
+        delete temp;
         // If the last element been deleted, tail is repositioned
         if(iter->next == 0) tail = iter;
     }
