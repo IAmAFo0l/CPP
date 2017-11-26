@@ -57,6 +57,7 @@ void pop()
     else if(head == tail){
         delete head;
         delete tail;
+        head = tail = NULL;
     }
     // For a non-empty list
     else{
