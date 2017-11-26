@@ -54,7 +54,10 @@ void pop()
     // In case of and empty list
     if(head == NULL) cout << "No element in linked list to pop";
     // In case of a single element list
-    else if(head == tail) head = tail = NULL;
+    else if(head == tail){
+        delete head;
+        delete tail;
+    }
     // For a non-empty list
     else{
         iter = head;
