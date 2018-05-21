@@ -7,10 +7,10 @@ Though C++ is fast, avoiding unnecessary iteration is always better!
 
 All/Most of the programs are interactive i.e., they require user input(s) in order to run.
 
-[Union and Intersection](https://github.com/IAmAFo0l/CPP/blob/master/union_intersection.cpp) of two arrays using minimum iteration.
+[Union and Intersection](https://github.com/krishnacdunuka/CPP/blob/master/union_intersection.cpp) of two arrays using minimum iteration.
 
-[Stack](https://github.com/IAmAFo0l/CPP/blob/master/stack.cpp) creation using arrays.
+[Stack](https://github.com/krishnacdunuka/CPP/blob/master/stack.cpp) creation using arrays.
 
-[Circular Queue](https://github.com/IAmAFo0l/CPP/blob/master/cirqueuelar.cpp) using  arrays.
+[Circular Queue](https://github.com/krishnacdunuka/CPP/blob/master/cirqueuelar.cpp) using  arrays.
 
-[Linked list](https://github.com/IAmAFo0l/CPP/blob/master/linked_list.cpp) with all the necessary function operations.
+[Linked list](https://github.com/krishnacdunuka/CPP/blob/master/linked_list.cpp) with all the necessary function operations.
